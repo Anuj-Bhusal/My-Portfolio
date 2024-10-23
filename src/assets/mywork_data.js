@@ -19,7 +19,7 @@ const mywork_data = [
         w_no:3,
         w_name:"My Portfolio using react js",
         w_img:image,
-        w_link:"https://github.com/Anuj-Bhusal/Portfolio-Anuj"
+        w_link:"https://github.com/Anuj-Bhusal/My-Portfolio"
     },
 ]
  
