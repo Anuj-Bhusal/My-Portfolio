@@ -1,0 +1,136 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  position: relative;
+  margin-top: 100px;
+}
+.about-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-title h1 {
+  font-size: 80px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.about-sections {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.about-left .about-me-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.about-right {
+  max-width: 600px;
+}
+.about-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.about-achievement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+.about-achievement h1 {
+  font-size: 60px;
+  font-weight: 700;
+  background: linear-gradient(264deg, #df8908 -5.09%, #bf15ff 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-achievement p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.about-achievement:hover {
+  transform: scale(1.07);
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .about {
+    margin-top: 50px;
+  }
+  .about-title h1 {
+    font-size: 50px; 
+  }
+  .about-sections {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-left .about-me-img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .about-right {
+    max-width: 100%;
+  }
+  .about-para {
+    font-size: 20px;
+  }
+  .about-achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-achievement h1 {
+    font-size: 35px;
+    margin-left: 8px;
+  }
+  .about-achievement p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    margin-top: 30px;
+  }
+  .about-title h1 {
+    font-size: 40px; 
+  }
+  .about-sections {
+    gap: 15px; 
+  }
+  .about-left .about-me-img {
+    width: 90%;
+    max-width: 250px; 
+  }
+  .about-right {
+    max-width: 90%; 
+  }
+  .about-para {
+    font-size: 18px; 
+    line-height: 1.4;
+  }
+  .about-achievements {
+    gap: 10px; 
+  }
+  .about-achievement h1 {
+    font-size: 25px; 
+    margin-left: 10px;
+    width: 70%;
+  }
+  .about-achievement p {
+    font-size: 16px; 
+  }
+}

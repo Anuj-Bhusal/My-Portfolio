@@ -1,0 +1,112 @@
+.Anuj {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.Anuj img {
+    margin-top: 130px;
+    width: 175px;
+    height: 175px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    border: 1px solid #fff; 
+}
+.Anuj h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 60px;
+    font-weight: 600;
+}
+.Anuj h1 span {
+    background: linear-gradient(#ffc400 0%, #fdd385 51%, #ffc400 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Anuj p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.Anuj-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.Anuj-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #d2941a, #eee395, #563b05);
+    cursor: pointer;
+}
+.Anuj-resume {
+    padding: 25px 45px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.Anuj-connect:hover {
+    border: 2px solid white;
+}
+.Anuj-resume:hover {
+    border-color: #ffc400;
+}
+@media (max-width: 768px) {
+    .Anuj img {
+        margin-top: 120px;
+        width: 260px;
+        height: 260px; 
+    }
+    .Anuj h1 {
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+    .Anuj p {
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .Anuj-action {
+        font-size: 18px;
+        gap: 16px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .Anuj-connect, .Anuj-resume {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .Anuj img {
+        margin-top: 100px;
+        width: 150px;
+        height: 150px;
+    }
+    .Anuj h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .Anuj p {
+        width: 80%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .Anuj-action {
+        font-size: 16px;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+    .Anuj-connect, .Anuj-resume {
+        padding: 15px 25px;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,80 @@
+React must have only one wrapper
+
+Component
+    It is a function whose first letter is capital
+    call it just like calling htmlTag
+    It is a custom tag
+
+Css
+    Inline Css in React
+    It is a string that is passed as a prop to the component
+    External Css in Reac
+    It is a file that is imported in the component
+    external file Css
+    import at index.js
+
+How to perform js operations inside tag
+        Use the curly braces {} to enclose the js code
+        but {} doesnot support if-else, for, while, do-while
+
+Boolean property of not displaying in browser
+
+Array element
+    Array element are placed one after another
+
+Object element
+    object can't be printed on browser
+    error : object are not valid as react child
+
+Content which is written inside return() are only displayed in browser
+
+Props
+    Value passed inside components
+    pass Props
+    get Props
+
+console.log()
+
+Button click
+    event
+    onClick
+
+Ternary Operator
+    replacement of if else
+
+
+useState
+
+img tag
+    Always place image in public folder
+    in img src "." here . always points public folder
+react fragment
+    It is used as a wrapper only, doesnot support any props(style,className)
+
+Form
+
+useEffect
+useRef
+
+react-router-dom
+Form
+hit api
+C
+R
+U
+D
+react-toastify
+
+When does component gets rendered?
+    when the variable set by useState is changed 
+
+What happen when component gets rendered
+    First , all content of browser gets removed and the content gets printed again
+    When component gets rendered, the component gets updated
+
+frontend  request backend and backend give response to frontend (api hit)
+
+C  create => post
+R  read => get
+U  update => put/patch
+D  delete => delete

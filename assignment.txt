@@ -1,0 +1,21 @@
+Form
+
+    user
+        name
+        email
+        password
+        phoneNumber
+        country
+        isMarried
+
+    product
+        name
+        price
+        quantity
+        description
+
+
+    school
+        name
+        address
+        description

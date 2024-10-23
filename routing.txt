@@ -1,0 +1,11 @@
+React Routing
+    -Changes the path after clicking on a link-NavLink
+    -Assign a new page to a new link- Routes
+
+
+In the url section, before question mark is called route, after is called query string/ search string
+    -Route is the path that the user is on
+    -Query string is the information that is passed to the server after the question mark(Query parameters)
+
+
+Package is react router dom(to install run npm i react-router-dom in terminal)
