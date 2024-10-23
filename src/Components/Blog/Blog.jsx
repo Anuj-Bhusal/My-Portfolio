@@ -4,15 +4,25 @@ import './Blog.css';
 const Blog = () => {
   const blogPosts = [
     {
-      title: "First Blog Post",
-      description: "This is a brief description of my first blog post. It covers topics on web development and React.",
+      title: "Probability and Statistics Class",
+      // need description of the class (review)
+      description: "This class covers topics on probability and statistics, including concepts like random variables, probability distributions, and statistical tests.",
       date: "October 10, 2024",
+      
     },
     {
-      title: "Second Blog Post",
-      description: "A second blog post about machine learning and its applications in finance.",
+      title: "Power BI class",
+      // need description of the class (review)
+      description: "In this class, you'll learn how to create interactive dashboards using Microsoft Power BI. You'll also learn how to use advanced features like data modeling, predictive analytics, and machine learning.",
       date: "October 5, 2024",
+    },
+    {
+      title: "Git and react class",
+      // need description of the class (review)
+      description: "In this class, you'll learn how to use Git for version control, collaborate with others on projects, and create a professional development portfolio.",
+      date: "October 1, 2024",
     }
+
   ];
 
   return (
