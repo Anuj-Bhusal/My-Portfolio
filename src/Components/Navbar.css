@@ -167,6 +167,7 @@ body {
   }
 
   .nav-menu {
+    width: 150px;
     gap: 20px;
   }
 
