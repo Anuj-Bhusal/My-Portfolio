@@ -7,6 +7,7 @@
 .footer-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-top-left p {
   font-size: 20px;
@@ -128,7 +129,7 @@
   .footer-email-input {
     padding: 10px 15px; 
     gap: 10px;
-    width: 70%;
+    width: 83%;
   }
   .footer-subscribe {
     font-size: 16px; 
