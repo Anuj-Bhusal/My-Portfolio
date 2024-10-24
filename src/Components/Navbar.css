@@ -96,7 +96,6 @@
   .nav-mob-open {
     display: block;
     position: absolute;
-    right: 30px;
     top: 10px;
   }
   .nav-mob-close {
@@ -141,7 +140,6 @@
     margin-top: 30px;
   }
   .nav-mob-open {
-    right: 10px;
     top: 10px;
   }
   .nav-mob-close {
