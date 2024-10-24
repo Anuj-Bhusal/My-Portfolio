@@ -144,7 +144,7 @@ body {
     height: 100%;
     z-index: 9999;
     transition: right 0.5s ease;
-    right: -300px; /* Initially off-screen */
+    right: -100vw; /* Move the menu off-screen to the right */
   }
 
   .nav-menu.open {
@@ -188,7 +188,7 @@ body {
     width: 25px;
   }
 
-  .nav-connect {
+  .nav-connect{
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 40px;
