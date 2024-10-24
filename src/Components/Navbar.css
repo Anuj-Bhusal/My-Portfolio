@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,10 +16,12 @@
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .navbar img {
   width: 100px;
   height: auto;
 }
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -23,9 +32,11 @@
   font-size: 20px;
   flex-wrap: wrap;
 }
+
 .nav-menu li {
   position: relative;
 }
+
 .nav-menu li a {
   cursor: pointer;
   position: relative;
@@ -34,6 +45,7 @@
   color: white;
   transition: color 0.3s ease-in-out;
 }
+
 .nav-menu li a::after {
   content: '';
   position: absolute;
@@ -44,20 +56,25 @@
   background-color: #b3914e;
   transition: width 0.3s ease-in-out;
 }
+
 .nav-menu li a:hover::after {
   width: 100%;
 }
+
 .nav-menu li a.active::after {
   width: 100%;
 }
+
 .nav-menu li a.active {
   color: #b3914e;
   font-weight: bold;
 }
+
 .nav-menu li a:focus {
   outline: 2px dashed #b3914e;
   outline-offset: 3px;
 }
+
 .nav-connect {
   padding: 15px 30px;
   border-radius: 50px;
@@ -68,36 +85,46 @@
   cursor: pointer;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
 .nav-connect:hover {
   transform: scale(1.05);
   background: linear-gradient(to right, #b3914e, #ccc175, #8d7236);
 }
+
 .nav-connect:focus {
   outline: 2px dashed #b3914e;
   outline-offset: 3px;
 }
+
 .nav-mob-close {
   display: none;
 }
+
 .nav-mob-open {
   display: none;
 }
+
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 50px;
     justify-content: space-between;
   }
+
   .navbar img {
     width: 80px;
   }
+
   .nav-connect {
     display: none;
   }
+
   .nav-mob-open {
     display: block;
     position: absolute;
+    right: 30px;
     top: 10px;
   }
+
   .nav-mob-close {
     display: block;
     position: absolute;
@@ -105,6 +132,7 @@
     top: 10px;
     width: 30px;
   }
+
   .nav-menu {
     position: fixed;
     flex-direction: column;
@@ -116,37 +144,50 @@
     height: 100%;
     z-index: 9999;
     transition: right 0.5s ease;
-    right: -300px;
+    right: -300px; /* Initially off-screen */
   }
+
+  .nav-menu.open {
+    right: 0; /* Slide in when opened */
+  }
+
   .nav-menu li {
     font-size: 22px;
     padding-left: 50px;
     margin-top: 30px;
   }
 }
+
 @media (max-width: 480px) {
   .navbar {
     padding: 10px;
   }
+
   .navbar img {
     width: 60px;
   }
+
   .nav-menu {
     gap: 20px;
   }
+
   .nav-menu li {
     font-size: 20px;
     padding-left: 30px;
     margin-top: 30px;
   }
+
   .nav-mob-open {
+    right: 10px;
     top: 10px;
   }
+
   .nav-mob-close {
     right: 10px;
     top: 10px;
     width: 25px;
   }
+
   .nav-connect {
     font-size: 16px;
     padding: 10px 20px;
