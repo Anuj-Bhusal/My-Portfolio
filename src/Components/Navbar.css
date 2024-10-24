@@ -102,8 +102,8 @@
   .nav-mob-close {
     display: block;
     position: relative;
-    top: 10px;
-    left: 240px;
+    top: 5px;
+    left: 230px;
     width: 30px;
   }
   .nav-menu {
@@ -113,14 +113,14 @@
     top: 0;
     gap: 20px;
     background-color: #1f0016;
-    width: 300px; 
+    width: 300px;
     height: 100%;
     z-index: 9999;
     transition: right 0.5s ease;
-    right: -300px; 
+    right: -300px;
   }
   .nav-menu li {
-    font-size: 24px; 
+    font-size: 24px;
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
@@ -129,45 +129,46 @@
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 10px 0px; 
+    padding: 10px 0px;
     margin: 0;
   }
   .navbar img {
-    width: 60px; 
+    width: 60px;
   }
   .nav-menu {
-    width: 60%; 
-    right: -100%; 
+    width: 60%;
+    right: -100%;
   }
   .nav-menu li {
-    font-size: 20px; 
-    padding-left: 50px; 
+    font-size: 20px;
+    padding-left: 50px;
   }
   .nav-mob-open {
-    right: 10px; 
+    right: 10px;
     top: 10px;
   }
   .nav-mob-close {
-    left: 170px; 
-    top: 10px;
-    width: 25px; 
+    left: 160px;
+    top: 5px;
+    width: 25px;
   }
   .nav-connect {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 10px 20px;
-    border-radius: 40px; 
+    border-radius: 40px;
   }
 }
 @media (max-width: 375px) {
   .nav-menu {
-    width: 200px; 
-    right: -200px; 
+    width: 200px;
+    right: -200px;
   }
   .nav-menu li {
-    font-size: 18px; 
-    padding-left: 40px; 
+    font-size: 18px;
+    padding-left: 40px;
   }
   .nav-mob-close {
-    left: 150px; 
+    left: 130px;
+    top: 5px;
   }
 }
