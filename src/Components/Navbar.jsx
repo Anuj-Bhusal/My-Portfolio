@@ -2,8 +2,6 @@ import React, { useRef } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import LOGO1 from '../assets/LOGO1.png';
-import menu_open from '../assets/menu_open.svg';
-import menu_close from '../assets/menu_close.svg';
 
 const Navbar = () => {
   let navigate = useNavigate();
@@ -22,13 +20,21 @@ const Navbar = () => {
   }
 
   return (
-    <div className='container'> {/* Added container class */}
+    <div className='container'>
       <div className='navbar'>
         <img src={LOGO1} alt="logo" />
-        <img src={menu_open} onClick={openMenu} alt="Open Menu" className='nav-mob-open' />
+        <div className='hamburger' onClick={openMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         
         <ul ref={menuRef} className='nav-menu'>
-          <img src={menu_close} onClick={closeMenu} alt="Close Menu" className="nav-mob-close" />
+          <div className='hamburger close' onClick={closeMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <li>
             <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink>
           </li>
