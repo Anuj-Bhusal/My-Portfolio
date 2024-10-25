@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import LOGO1 from '../assets/LOGO1.png';
@@ -6,13 +6,16 @@ import LOGO1 from '../assets/LOGO1.png';
 const Navbar = () => {
   let navigate = useNavigate();
   const menuRef = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const openMenu = () => {
     menuRef.current.style.right = "0";
+    setIsMenuOpen(true);
   }
 
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
+    setIsMenuOpen(false);
   }
 
   const handleLinkClick = () => {
@@ -23,7 +26,7 @@ const Navbar = () => {
     <div className='container'>
       <div className='navbar'>
         <img src={LOGO1} alt="logo" />
-        <div className='hamburger' onClick={openMenu}>
+        <div className='hamburger' onClick={isMenuOpen ? closeMenu : openMenu}>
           <span></span>
           <span></span>
           <span></span>
@@ -31,7 +34,6 @@ const Navbar = () => {
         
         <ul ref={menuRef} className='nav-menu'>
           <div className='hamburger close' onClick={closeMenu}>
-            <span></span>
             <span></span>
             <span></span>
           </div>
