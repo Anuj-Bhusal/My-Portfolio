@@ -7,7 +7,7 @@ const mywork_data = [
         w_no:1,
         w_name:"Stock Market Prediction System",
         w_img:SMPS,
-        w_link:'https://github.com/Anuj-Bhusal/Stock'
+        w_link:'https://github.com/Anuj-Bhusal/Stock-Market-Prediction-System'
     },
     {
         w_no:2,
