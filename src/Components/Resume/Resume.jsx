@@ -13,7 +13,9 @@ const styles = StyleSheet.create({
   section: {
     marginBottom: 20,
     padding: 10,
-    borderBottom: '1px solid #ccc',
+    borderBottomWidth: 2,
+    borderBottomColor: '#d2941a',
+    borderBottomStyle: 'solid',
   },
   title: {
     fontSize: 24,
@@ -43,6 +45,48 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: '50%',
     marginBottom: 20,
+  },
+  profileSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  educationSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  skillsSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  projectsSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  hobbiesSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  languagesSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
+  },
+  contactSection: {
+    marginBottom: 20,
+    borderBottomWidth: 2,
+    borderBottomColor: 'linear-gradient(to right, #d2941a, #eee395, #563b05)',
+    borderBottomStyle: 'solid',
   },
 });
 
